@@ -1,0 +1,65 @@
+.road{
+    width: 75%;
+}
+
+#mycar{
+    width: 20%;
+    height: 20%;
+}
+
+#wheel{
+    position: relative;
+    bottom: 21px;
+    left: 143px;
+    width: 2.6%;
+    height: 2.6%;
+    animation: wheel1 3s linear;
+    animation-iteration-count: 1;
+}
+
+#wheel2{
+    position: relative;
+    bottom: 21px;
+    left: 277px;
+    width: 2.6%;
+    height: 2.6%;
+    animation: wheel1 3s linear;
+    animation-iteration-count: 1;
+}
+
+#movecar{
+    position: relative;
+    bottom: 270px;
+    right: 80px;
+    animation: movecar 5s linear;
+}
+
+@keyframes wheel1{
+
+        from{
+            transform: rotate(0deg);
+        }
+
+        to{
+           transform: rotate(359deg);
+        }
+    }
+        #wheel1{
+            animation:wheel1 0.5s linear;
+        }
+
+        @keyframes movecar{
+
+            from{
+               position: relative;
+               left: 0;
+            }
+    
+            to{
+               position: relative;
+               left: 800px;
+            }
+        }
+            #movecar{
+                animation:movecar 3s linear;
+            }
