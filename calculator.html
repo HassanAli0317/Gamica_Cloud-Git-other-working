@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+
+<body>
+    <div class="bg">
+        <div class="stylishtext">
+            <span class="letter" data-letter="G">G</span>
+            <span class="letter" data-letter="A">A</span>
+            <span class="letter" data-letter="M">M</span>
+            <span class="letter" data-letter="I">I</span>
+            <span class="letter" data-letter="C">C</span>
+            <span class="letter" data-letter="A">A</span><br/>
+            <span class="letter" data-letter="C">C</span>
+            <span class="letter" data-letter="L">L</span>
+            <span class="letter" data-letter="O">O</span>
+            <span class="letter" data-letter="U">U</span>
+            <span class="letter" data-letter="D">D</span>
+        </div>
+        <pre style="color:aliceblue; margin-left:30px; ">Calculator Assignment</pre>
+    </div>
+    <div id="border" class="main-div">
+        <form name="form">
+            <input type="text" name="text1" class="input-show" disabled>
+        </form>
+        <table id="border">
+            <tr>
+                <td><input class="button" type="button" value="C" onclick="clr()"></td>
+                <td><input class="button" type="button" value="<" onclick="back()"></td>
+                <td><input class="button" type="button" value="/" onclick="put('/')"></td>
+                <td><input class="button" type="button" value="*" onclick="put('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="put(7)"></td>
+                <td><input class="button" type="button" value="8" onclick="put(8)"></td>
+                <td><input class="button" type="button" value="9" onclick="put(9)"></td>
+                <td><input class="button" type="button" value="-" onclick="put('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="put(4)"></td>
+                <td><input class="button" type="button" value="5" onclick="put(5)"></td>
+                <td><input class="button" type="button" value="6" onclick="put(6)"></td>
+                <td><input class="button" type="button" value="+" onclick="put('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="put(1)"></td>
+                <td><input class="button" type="button" value="2" onclick="put(2)"></td>
+                <td><input class="button" type="button" value="3" onclick="put(3)"></td>
+                <td rowspan="2"><input class="button" type="button" style="height:110px" value="=" onclick="total()"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input class="button" type="button" style="width:110px" value="0" onclick="put(0)"></td>
+                <td><input class="button" type="button" value="." onclick="put('.')"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
