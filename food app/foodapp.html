@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food App</title>
+    <link rel="stylesheet" href="foodapp.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
+</head>
+
+<body id="bg1"> 
+    <h1>Gamica Online Food App</h1>
+    <table border="3">
+        <tr class="menu">
+            <h2>Our Menu</h2>
+            <td class="menuName">Bayrani</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">250</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1" />
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">Shawarma</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">100</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1">
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">Chicken krahi</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">400</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1">
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">Tika Boti</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">320</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">Barger</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">80</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">somosa</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">25</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1">
+            </td>
+        </tr>
+        <tr>
+            <td class="menuName">Roll</td>
+            <td><input class="dish" type="checkbox"></td>
+            <td class="dishprice">30</td>
+            <td>
+                <input id="qty" type="number" class="menuqty" value="1">
+        <tr id="btn">
+            <td><button id="total" onclick="calculateBill()">Total</button></td>
+        </tr>
+        <!-- <tr id="btn">
+            <td><button  onclick="expDishes()">Exp Each Dishe price</button></td>
+        </tr> -->
+        <tr id="btn">
+                <td><button  onclick="showexpensiveDishes()">Expensive Dishes</button></td>
+            </tr>
+        </td>
+        </tr>
+    </table>
+
+
+    <div id="myDiv">
+
+    </div>
+
+    <div id="main-div">
+        <div>
+            <label for="Gross Bill">Gross Bill:</label><span id="gBill"></span>
+        </div>
+
+        <div>
+            <label for="Discount">Total Discount:</label><span id="disBill"></span>
+        </div>
+        <div>
+            <label for="Total Bill">Total Bill:</label><span id="tBill"></span>
+        </div>
+    </div>
+
+    <div id="new-div">
+            <div>
+                <label></label><span></span>
+            </div>
+            <div>
+                <label></label><span></span>
+            </div>
+            <div>
+                <label></label><span></span>
+            </div>
+        </div>
+    <script src="foodapp.js"></script>
+</body>
+
+</html>
