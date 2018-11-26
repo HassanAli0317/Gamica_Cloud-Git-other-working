@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List With JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Todocss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="intro col-12">
+                <h1>Works To-Dos</h1>
+            </div>
+            <div class="border1"></div>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="help-text col-12">
+                <p id="first">Enter text into the input field to add items to your list</p>
+                <p id="second">Click to "Enter" sign add Item</p>
+                    <p id="third">Click the "Exit" Sign to Remove the item from list</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 header" id="myDiv">
+                <input id="userinput" type="text" value="" placeholder="Enter a Todo item.." maxlength="27"/>
+                <button id="enter" onclick="Todo()" class="addItem">Enter</button>
+                <!-- <p id="item"></p> -->
+            </div>
+        </div>
+
+        <ul id="itemlist">
+                <li class="checked">first</li>
+                <li>second</li>
+                <li>third</li>
+                <li>four</li>
+                <li>five</li>
+            </ul>
+        <script src="Todo.js"></script>
+</body>
+</html>
